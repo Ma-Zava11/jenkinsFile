@@ -20,7 +20,7 @@ pipeline {
         }
          stage('Build the docker image'){
              steps{
-                bat 'docker build -t image_tp2build .'
+                bat 'docker build -t image_jenkinsFile .'
              }
         }
         stage('Push the docker image') {
