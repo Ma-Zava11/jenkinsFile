@@ -20,7 +20,7 @@ pipeline {
         }
          stage('Build the docker image'){
              steps{
-                bat 'docker build -t image_jenkinsFile .'
+                bat 'docker build -t mazava/image_jenkinsfile:2.1 .'
              }
         }
         stage('Push the docker image') {
