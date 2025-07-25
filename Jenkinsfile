@@ -20,7 +20,7 @@ pipeline {
         }
          stage('Build the docker image'){
              steps{
-                bat 'docker build -t mazava/repostp2:1.0.0 .'
+                bat 'docker build -t image_tp2build .'
              }
         }
         stage('Push the docker image') {
